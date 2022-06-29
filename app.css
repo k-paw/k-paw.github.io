@@ -1,6 +1,38 @@
 html {
   scroll-snap-type: y mandatory;
+  font-weight: 400;
   /* scroll-snap-align: start; */
+}
+
+@media (prefers-color-scheme:dark) {
+  section:nth-of-type(even) {
+    color: white;
+    /* background: #121212; */
+    background: linear-gradient(to bottom, #121212 0%, #575757 100%);
+  }
+
+  section:nth-of-type(odd) {
+    color: white;
+    /* background: #575757; */
+    background: linear-gradient(to bottom, #575757 0%, #121212 100%);
+  }
+
+  html {
+    font-weight: 350;
+  }
+}
+
+@media (prefers-color-scheme:light) {
+  section:nth-of-type(even) {
+    color: black;
+    /* background: #F3ECDA; */
+    background: linear-gradient(to bottom, #fdfbf8 0%, #F3ECDA 100%);
+  }
+
+  section:nth-of-type(odd) {
+    color: black;
+    background: linear-gradient(to bottom, #F3ECDA 0%, #fdfbf8 100%);
+  }
 }
 
 section {
@@ -16,7 +48,8 @@ section {
 }
 
 .name {
-  font-style: bold;
+  font-style: italic;
+  border-bottom: solid seagreen 5px;
 }
 
 img {
@@ -25,7 +58,12 @@ img {
   padding-left: 15px;
 }
 
-section:nth-of-type(even) {
+.follow {
+  font-size: 2.5rem;
+  padding-left: 50px;
+}
+
+/* section:nth-of-type(even) {
   color: black;
   background: #F3ECDA;
 }
@@ -33,7 +71,7 @@ section:nth-of-type(even) {
 section:nth-of-type(odd) {
   color: black;
   background: white;
-}
+} */
 
 .carousel {
   scroll-snap-type: x mandatory;
@@ -42,10 +80,6 @@ section:nth-of-type(odd) {
   display: flex;
   align-items: center;
   /* justify-content: center; */
-}
-
-ul {
-  /* padding-left: -100px; */
 }
 
 .item {
@@ -57,7 +91,7 @@ ul {
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  font-size: 2.5rem;
+  font-size: 35px;
 }
 
 .wave {

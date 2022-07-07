@@ -47,6 +47,12 @@ section {
 
 }
 
+.sectionTwo {
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .name {
   font-style: italic;
   border-bottom: solid seagreen 5px;
@@ -93,6 +99,15 @@ body {
   font-family: system-ui, sans-serif;
   font-size: 35px;
 }
+
+ul {
+  list-style-type: none;
+
+}
+
+/* a:visited {
+
+} */
 
 .wave {
   animation-name: wave-animation;
